@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessoria Cabral & Silva | Crédito Premium RGB</title>
-    <meta name="description" content="Assessoria Cabral & Silva: As menores taxas em empréstimos e financiamento imobiliário. Simule grátis pelo WhatsApp (13) 99791-6655 e libere seu crédito hoje mesmo.">
+    <title>Assessoria Cabral & Silva</title>
+    <meta name="description" content="Assessoria Cabral & Silva: As menores taxas em empréstimos e financiamento imobiliário. Simule grátis pelo WhatsApp (13) 99791-6655.">
     <style>
-        /* Configurações Gerais */
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +13,6 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* Fundo do Site Estilo Litoral GTA 5 */
         body {
             background: linear-gradient(rgba(0, 0, 0, 0.92), rgba(15, 5, 5, 0.96)), 
                         url('https://unsplash.com') no-repeat center center fixed;
@@ -23,7 +21,6 @@
             line-height: 1.6;
         }
 
-        /* Animações de Cores Pulsantes RGB Gamer */
         @keyframes rgb-glow {
             0% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
             33% { border-color: #00ff00; box-shadow: 0 0 15px #00ff00; }
@@ -38,7 +35,6 @@
             100% { color: #ff0000; text-shadow: 0 0 8px #ff0000; }
         }
 
-        /* Cabeçalho */
         header {
             background-color: rgba(10, 10, 10, 0.95);
             position: sticky;
@@ -67,7 +63,6 @@
             animation: rgb-text 6s linear infinite;
         }
 
-        /* Botão Telefone Topo RGB */
         .btn-assessoria {
             background-color: #000000; 
             color: #ffffff; 
@@ -90,7 +85,6 @@
             color: #000000;
         }
 
-        /* Seção Principal */
         .hero {
             padding: 60px 20px 40px 20px;
             text-align: center;
@@ -112,7 +106,6 @@
             color: #ccc;
         }
 
-        /* Container do Simulador Estilo Gamer RGB */
         .simulador-container {
             max-width: 550px;
             margin: 0 auto;
@@ -156,7 +149,6 @@
             transition: 0.3s;
         }
 
-        /* Caixa de Explicação Dinâmica */
         .explicacao-box {
             background-color: #151515;
             padding: 12px 15px;
@@ -219,7 +211,6 @@
             box-shadow: 0 0 20px #00ff00;
         }
 
-        /* Novas Seções de Conteúdo */
         .secao-container {
             max-width: 1200px;
             margin: 60px auto;
@@ -240,7 +231,6 @@
             margin-bottom: 40px;
         }
 
-        /* Grid de Serviços e Vantagens */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -273,7 +263,6 @@
             margin-bottom: 20px;
         }
 
-        /* Seção Depoimentos */
         .depoimentos-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -299,7 +288,6 @@
             font-size: 14px;
         }
 
-        /* Seção FAQ */
         .faq-item {
             background: #121212;
             padding: 20px;
@@ -340,7 +328,6 @@
 </head>
 <body>
 
-    <!-- Cabeçalho -->
     <header>
         <div class="nav-container">
             <div class="logo">Assessoria Cabral & <span>Silva</span></div>
@@ -350,9 +337,17 @@
         </div>
     </header>
 
-    <!-- Seção Principal / Simulador -->
     <section class="hero">
         <h1>Aqui você vai achar sua casa nova e seu novo lar</h1>
         <p>Preencha os dados no painel RGB interativo para calcular instantaneamente o valor estimado.</p>
         
         <div class="simulador-container">
+            <h2>Painel de Simulação</h2>
+            
+            <div class="form-group">
+                <label for="tipo">Selecione a Linha de Crédito:</label>
+                <select id="tipo" onchange="atualizarInterface()">
+                    <option value="imobiliario">🏢 Financiamento Imobiliário</option>
+                    <option value="consignado">👴 Empréstimo Consignado INSS</option>
+                    <option value="prefeitura">🏛️ Empréstimo Prefeitura / Servidor</option>
+                    <option value="clt">💼 Empréstimo CLT / FGTS</option>
